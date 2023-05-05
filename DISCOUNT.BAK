@@ -1,0 +1,40 @@
+#include<iostreamm.h>
+#include<conio.h>
+
+void main()
+{
+
+	float amount,discount,total;
+
+	cout<<"enter total amount";
+	cin>>amount;
+
+	if(amount<=100)
+		cout<<"\n amount to be paid :" ;
+	else
+	{
+		if( (amount>100) && (amount<=200) )
+		{
+			discount=(amount*5)/100;
+			total=amount-discount;
+		}
+		else if(amount>200&&amount<=400)
+		{
+			discount=(amount*10)/100;
+			total=amount-discount;
+		}
+		else if(amount>400&&amount<=800)
+		{
+			discount=(amount*20)/100;
+			total=amount-discount;
+		}
+		else
+		{
+			discount=(amount*25)/100;
+			total=amount-discount;
+		}
+    }
+    cout<<"amount to be apid:"<<total;
+    getch();
+
+}
